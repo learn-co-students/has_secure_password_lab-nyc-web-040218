@@ -1,0 +1,7 @@
+<h2>Create a user:<h2>
+<%= form_for @user, url:'/' do |f| %>
+  Username: <%= f.text_field :name %>
+  Password: <%= f.password_field :password %>
+  Confirm password: <%= f.password_field :password_confirmation %>
+  <%= f.submit %>
+<% end %>
